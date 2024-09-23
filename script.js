@@ -4,6 +4,16 @@ window.addEventListener("load",function(){
 });
 
 
+// navbar
+function navopen(){
+    document.getElementById("nav-open").style.display = "none";
+    document.getElementById("nav-list").style.display = "flex";
+}
+
+function navclose(){
+    document.getElementById("nav-list").style.display = "none";
+    document.getElementById("nav-open").style.display = "flex";
+}
 
 
 const sliderimage = document.getElementById("slider-img");
@@ -75,6 +85,9 @@ document.getElementById('newsletter-form').addEventListener('submit', function(e
         alert('Please enter a valid email address.');
     }
 });
+
+
+
 
 
 

@@ -24,7 +24,8 @@ header{
     width: 100vw;
 }
 
-nav div{
+
+.logo{
     background-color: white;
     text-align: center;
 }
@@ -33,6 +34,11 @@ nav img{
     width: 50%;
     height: 6.35rem;
     object-fit: cover;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 nav ul{
     width: 100vw;
@@ -50,6 +56,34 @@ nav ul li {
 nav ul li a{
     text-decoration: none;
     color: white;
+}
+.nav-button{
+    display: none;
+}
+.nav-close{
+    display: none;
+}
+
+@media only screen and (max-width:1000px) {
+    .navbar{
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem;
+    }
+    .nav-button{
+        display: flex;
+        position: absolute;
+       right: 20px;
+       
+    }  
+    
+    .navbar ul {
+        flex-direction: column;
+        max-width: 300px;
+        height: max-content;
+        display: none;
+        gap: 2rem;
+    }
 }
 
 /* social media */
@@ -125,6 +159,12 @@ display: flex;
 justify-content: space-evenly;
 align-items: center;
 }
+@media only screen and (max-width:900px){
+    .result_12 , .result_10{
+       flex-direction: column;
+       gap: 2rem;
+    }
+}
 .header_10{
    padding-top: 2.5rem;
 }
@@ -175,9 +215,7 @@ align-items: center;
     align-items: center;
     /* margin: 2rem 0; */
 }
-.heighlights_images_1{
-    /* margin-top: 1rem; */
-}
+
 .heighlights_images_2{
     margin: 2rem 0;
 }
@@ -188,6 +226,13 @@ align-items: center;
     /* width: 300px; */
     height: 15.65rem;
     /* height: 250px; */
+}
+
+@media only screen and (max-width:900px) {
+    .heighlights_images_1 , .heighlights_images_2{
+       flex-direction: column;
+       gap: 1.5rem;
+    }
 }
 
 .smart_class{
@@ -316,6 +361,12 @@ align-items: center;
     margin: auto;
     width: 70%;
     /* height: 0.02rem; */
+}
+
+@media only screen and (max-width:900px){
+    .video_gallery_container iframe{
+        width: auto;
+    }
 }
 
 
