@@ -76,6 +76,9 @@ nav ul li a{
        right: 20px;
        
     }  
+    .nav-close{
+        display: block;
+    }
     
     .navbar ul {
         flex-direction: column;
@@ -354,6 +357,14 @@ align-items: center;
 .video_gallery_container{
     text-align: center;
     padding-bottom: 2rem;
+    
+}
+.video_frame{
+    display: flex;
+    justify-content:center;
+    gap: 3rem;
+    align-items: center;
+   margin-bottom: 2rem;
 }
 .video_gallery_container hr{
     border: 0.3rem solid #65d9ca;
@@ -364,6 +375,9 @@ align-items: center;
 }
 
 @media only screen and (max-width:900px){
+    .video_frame{
+        flex-direction: column;
+    }
     .video_gallery_container iframe{
         width: auto;
     }

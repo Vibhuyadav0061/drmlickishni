@@ -15,7 +15,7 @@ function navclose(){
     document.getElementById("nav-open").style.display = "flex";
 }
 
-
+// slider
 const sliderimage = document.getElementById("slider-img");
 let ct = 1;
 setInterval( ()=>{
@@ -51,40 +51,46 @@ setInterval( ()=>{
 }, 5000);
 
 
-const video = document.getElementById("video");
-let ctv = 1;
-function nextvideo(){
-    ctv = (ctv+1)%3;
-    if(ctv == 1){
-        video.src = "https://www.youtube.com/embed/LFeJqF30i0A?si=YPEWmnV4ZEEgT8t1";
-    }
-    else{
-        video.src = "https://www.youtube.com/embed/rz8rULnwMpk?si=Q_Dj_4R_lzVu4sNB";
-    }
+// const video = document.getElementById("video");
+// let ctv = 1;
+// function nextvideo(){
+//     ctv = (ctv+1)%3;
+//     if(ctv == 1){
+//         video.src = "https://www.youtube.com/embed/LFeJqF30i0A?si=YPEWmnV4ZEEgT8t1";
+//     }
+//     else{
+//         video.src = "https://www.youtube.com/embed/rz8rULnwMpk?si=Q_Dj_4R_lzVu4sNB";
+//     }
     
-}
-function previousvideo(){
-    ctv = (ctv-1)%3;
-    if(ctv == 1){
-        video.src = "https://www.youtube.com/embed/LFeJqF30i0A?si=YPEWmnV4ZEEgT8t1";
-    }
-    else{
-        video.src = "https://www.youtube.com/embed/_dGXoMJQ6Qk?si=4vATpAbi9zekOIN9";
-    }
-}
+// }
+// function previousvideo(){
+//     ctv = (ctv-1)%3;
+//     if(ctv == 1){
+//         video.src = "https://www.youtube.com/embed/LFeJqF30i0A?si=YPEWmnV4ZEEgT8t1";
+//     }
+//     else{
+//         video.src = "https://www.youtube.com/embed/_dGXoMJQ6Qk?si=4vATpAbi9zekOIN9";
+//     }
+// }
 
 
-// footer
-document.getElementById('newsletter-form').addEventListener('submit', function(event) {
-    event.preventDefault();
-    const email = document.getElementById('newsletter-email').value;
-    if (email) {
-        alert(`Thank you for subscribing with ${email}`);
-        document.getElementById('newsletter-email').value = '';
-    } else {
-        alert('Please enter a valid email address.');
-    }
-});
+// // footer
+// document.getElementById('newsletter-form').addEventListener('submit', function(event) {
+//     event.preventDefault();
+//     const email = document.getElementById('newsletter-email').value;
+//     if (email) {
+//         alert(`Thank you for subscribing with ${email}`);
+//         document.getElementById('newsletter-email').value = '';
+//     } else {
+//         alert('Please enter a valid email address.');
+//     }
+// });
+
+
+
+
+// form
+
 
 
 

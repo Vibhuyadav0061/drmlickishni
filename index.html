@@ -7,11 +7,10 @@
     
     <title>DR RAMMANOHAR LOHIYA INTER COLLEGE KISHNI</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="faculty.html">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-   <link rel="stylesheet" href="index.html">
-   <link rel="stylesheet" href="faculty.html">
-   <link rel="stylesheet" href="registration.html">
+  
+   <script src="script.js"></script>
 </head>
 <body>
     <div class="preloader" id="preloader"></div>
@@ -24,9 +23,9 @@
                 <ul id="nav-list">
                     <div id="nav-close" class="nav-close" onclick="navclose()"><i class="fa-regular fa-circle-xmark fa-xl" style="color: #ffffff;"></i></div>
                     <li><a href="index.html">HOME</a></li>
-                    <li><a href="">ABOUT SCHOOL</a></li>
+                    <li><a href="#welcome_container">ABOUT SCHOOL</a></li>
                     <li><a href="registration.html">ADMISSION</a></li>
-                    <li><a href="#our_highlights">BEYOND ACADEMICS</a></li>
+                    <li><a href="#our_highlights">OUR HIGHLIGHTS</a></li>
                     <li><a href="faculty.html">FACULTY</a></li>
                     <li><a href="#our_result">OUR RESULT</a></li>
                     <li><a href="#footer">CONTACT US</a></li>
@@ -45,7 +44,7 @@
         <img src="images/schoolbuilding.jpg" alt="" id="slider-img">
     </div>
     <main>
-      <div class="welcome_container">
+      <div class="welcome_container" id="welcome_container">
         <h2>WELCOME TO DRML</h2>
         <h5>Empowering Minds, Igniting Futures: Our School, Your Success!</h5>
         <p>
@@ -145,15 +144,23 @@
       <div class="video_gallery">
         <h2>VIDEO GALLERY</h2>
         <div class="video_gallery_container">
-            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/_dGXoMJQ6Qk?si=4vATpAbi9zekOIN9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="video_frame">
+                <iframe id="video" width="400" height="235" src="https://www.youtube.com/embed/_dGXoMJQ6Qk?si=4vATpAbi9zekOIN9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="400" height="235" src="https://www.youtube.com/embed/zG2eQRzKxrc?si=JBzBc2ZFj2TfRJs8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+               </div>
              <hr>
         </div>
         
-         <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/LFeJqF30i0A?si=YPEWmnV4ZEEgT8t1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
-        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/rz8rULnwMpk?si=Q_Dj_4R_lzVu4sNB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+         <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/LFeJqF30i0A?si=YPEWmnV4ZEEgT8t1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/rz8rULnwMpk?si=Q_Dj_4R_lzVu4sNB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
      </div>
       
-     
+     <script>
+        var preloader = document.getElementById("preloader");
+        window.addEventListener("load",function(){
+        preloader.style.display = "none";
+         });
+     </script>
     </main>
     <footer id="footer">
         <div class="footer-container">
@@ -178,6 +185,6 @@
     </footer>
 
     
-    <script src="script.js"></script>
+    
 </body>
 </html>
