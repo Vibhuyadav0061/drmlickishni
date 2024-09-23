@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team - School Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.html">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            background-color: #b1b5b5;
+            padding: 1.5rem;
+            text-align: center;
+            color: white;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #333;
+        }
+        .team-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        .team-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .team-card:hover {
+            transform: scale(1.05);
+        }
+        .team-card img {
+            width: 100%;
+            height: 25rem;
+        }
+        .team-card .info {
+            padding: 1rem;
+            text-align: center;
+        }
+        .team-card h3 {
+            margin-bottom: 0.5rem;
+            font-size: 1.5rem;
+        }
+        .team-card p {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 1rem;
+        }
+        .team-card span {
+            display: block;
+            margin-bottom: 1rem;
+            font-weight: bold;
+            color: #65d9ca;
+        }
+        @media (max-width: 768px) {
+            .team-section {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    <script src="script.js"></script>
+    
+</head>
+<body>
+    
+
+    
+    <header>
+        <nav > 
+            <div class="logo"><img src="drmllogo.png" alt=""></div>
+            
+            <div class="navbar" >
+                <span class="nav-button" id="nav-open" onclick="navopen()"><i class="fa-solid fa-bars fa-xl" style="color: #ffffff;"></i></span>
+                <ul id="nav-list">
+                    <div id="nav-close" class="nav-close" onclick="navclose()"><i class="fa-regular fa-circle-xmark fa-xl" style="color: #ffffff;"></i></div>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="">ABOUT SCHOOL</a></li>
+                    <li><a href="">ADMISSIONS</a></li>
+                    <li><a href="#our_highlights">BEYOND ACADEMICS</a></li>
+                    <li><a href="">FACULTY</a></li>
+                    <li><a href="#our_result">OUR RESULT</a></li>
+                    <li><a href="#footer">CONTACT US</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+    </header>
+    <h1>Meet Our Team</h1>
+
+    <section class="container">
+        <h2> Director, Principal & Faculty</h2>
+        <div class="team-section">
+           
+             <!-- Director -->
+             <div class="team-card">
+                <img src="./images/director.jpg" alt="Director">
+                <div class="info">
+                    <h3>Mr. Uma Shankar Yadav</h3>
+                    <span>Director</span>
+                    <p>With an inspiring career in administration, Mr. Uma Shankar Yadav leads the school towards new heights of success and innovation in education.</p>
+                </div>
+            </div>
+            <!-- Principal -->
+            <div class="team-card">
+                <img src="./images/principle.jpg" alt="Principal">
+                <div class="info">
+                    <h3>Mr. Sanjeev Sharma</h3>
+                    <span>Principal</span>
+                    <p>Mr. Sanjeev Sharma is a visionary leader with over 10+ years of experience in education, fostering a holistic development approach for students.</p>
+                </div>
+            </div>
+
+          
+
+            <!-- Faculty 1 -->
+            <div class="team-card">
+                <img src="./images/math-teacher.jpg" alt="Faculty">
+                <div class="info">
+                    <h3>Mr. S P Yadav</h3>
+                    <span>Math Teacher</span>
+                    <p>Mr. Singh brings enthusiasm and innovative teaching methods to make mathematics both fun and challenging for students.</p>
+                </div>
+            </div>
+
+            <!-- Faculty 2 -->
+            <!-- <div class="team-card">
+                <img src="images/faculty2.jpg" alt="Faculty">
+                <div class="info">
+                    <h3>Mr. Jaswant Saxena</h3>
+                    <span>Science Teacher</span>
+                    <p>Mr. Jaswant Saxena is passionate about science and encourages students to explore and discover the wonders of the natural world.</p>
+                </div>
+            </div> -->
+
+            <!-- Faculty 3 -->
+            <!-- <div class="team-card">
+                <img src="images/faculty3.jpg" alt="Faculty">
+                <div class="info">
+                    <h3>Mr. Sanjeev Saxena</h3>
+                    <span>History Teacher</span>
+                    <p>Mr. Sanjeev Saxena helps students understand the importance of history in shaping the present and the future with engaging lessons.</p>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+</body>
+</html>
