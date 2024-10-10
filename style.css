@@ -211,6 +211,13 @@ align-items: center;
     width: 9rem;
     /* border-radius: 0.5rem; */
 }
+@media(max-width:900px){
+    .card img{
+        height: 12rem;
+        width: 11rem;
+        /* border-radius: 0.5rem; */
+    }
+}
 .card p{
     text-align: center;
 }
