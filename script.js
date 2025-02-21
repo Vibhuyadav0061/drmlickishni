@@ -22,7 +22,7 @@ setInterval( ()=>{
     
     if(ct == 1){
 
-        sliderimage.src = "images/schoolbuilding.jpg";
+        sliderimage.src = "images/building1.jpg";
     }
     else if(ct == 2){
         sliderimage.src = "images/2024boys.png";
