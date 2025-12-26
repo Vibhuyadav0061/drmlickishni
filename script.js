@@ -263,6 +263,30 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// Social Media Toggle Functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const socialToggle = document.getElementById('socialToggle');
+    const socialFloating = document.querySelector('.social-media-floating');
+    
+    if (socialToggle && socialFloating) {
+        socialToggle.addEventListener('click', function() {
+            socialFloating.classList.toggle('active');
+        });
+        
+        // Auto-hide on mobile after interaction
+        if (window.innerWidth <= 768) {
+            const socialLinks = document.querySelectorAll('.social-link');
+            socialLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    setTimeout(() => {
+                        socialFloating.classList.remove('active');
+                    }, 300);
+                });
+            });
+        }
+    }
+});
+
 // Scroll to top functionality
 window.addEventListener('scroll', function() {
     const scrollToTop = document.getElementById('scrollToTop');
