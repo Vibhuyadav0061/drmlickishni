@@ -3,239 +3,372 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Team - School Website</title>
+    <title>Faculty - DR RAMMANOHAR LOHIYA INTER COLLEGE KISHNI</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
- 
     <link rel="stylesheet" href="style.css">
-   
-  
-    
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            /* font-family: Arial, sans-serif; */
-            background-color: #f4f4f4;
-        }
-        h1 {
-            background-color: #647777;
-            padding: 1.5rem;
-            text-align: center;
-            color: white;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem 1rem;
-        }
-        h2 {
-            text-align: center;
-            margin-bottom: 2rem;
-            color: #333;
-        }
-        .team-section {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-        }
-        .team-card {
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            overflow: hidden;
-            transition: transform 0.3s ease;
-        }
-        .team-card:hover {
-            transform: scale(1.05);
-        }
-        .team-card img {
-            width: 100%;
-            height: 25rem;
-        }
-        .team-card .info {
-            padding: 1rem;
-            text-align: center;
-        }
-        .team-card h3 {
-            margin-bottom: 0.5rem;
-            font-size: 1.5rem;
-        }
-        .team-card p {
-            font-size: 1rem;
-            color: #555;
-            margin-bottom: 1rem;
-        }
-        .team-card span {
-            display: block;
-            margin-bottom: 1rem;
-            font-weight: bold;
-            color: #65d9ca;
-        }
-        @media (max-width: 768px) {
-            .team-section {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
-    <script>
-        function navopen(){
-    document.getElementById("nav-open").style.display = "none";
-    document.getElementById("nav-list").style.display = "flex";
-}
-
-function navclose(){
-    document.getElementById("nav-list").style.display = "none";
-    document.getElementById("nav-open").style.display = "flex";
-}
-    </script>
-    
 </head>
 <body>
-    
-
-    
     <header>
-        <nav > 
-            <div class="logo"><img src="drmllogo.png" alt=""></div>
+        <nav class="modern-nav"> 
+            <div class="logo">
+                <img src="drmllogo.png" alt="DRMLIC Logo">
+                <div class="logo-text">
+                    <span class="logo-main">DRMLIC</span>
+                    <span class="logo-sub">Excellence in Education</span>
+                </div>
+            </div>
             
-            <div class="navbar" >
-                <span class="nav-button" id="nav-open" onclick="navopen()"><i class="fa-solid fa-bars fa-xl" style="color: #ffffff;"></i></span>
-                <ul id="nav-list">
-                    <div id="nav-close" class="nav-close" onclick="navclose()"><i class="fa-regular fa-circle-xmark fa-xl" style="color: #ffffff;"></i></div>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="#welcome_container">ABOUT SCHOOL</a></li>
-                    <li><a href="registration.html">ADMISSION</a></li>
-                    <li><a href="fees.html">FEE STRUCTURE</a></li>
-                    <li><a href="index.html">BEYOND ACADEMICS</a></li>
-                    <li><a href="faculty.html">FACULTY</a></li>
-                    <li><a href="index.html">OUR RESULT</a></li>
-                    <li><a href="index.html">CONTACT US</a></li>
+            <div class="navbar">
+                <span class="nav-button" id="nav-open" onclick="navopen()">
+                    <i class="fa-solid fa-bars fa-xl"></i>
+                </span>
+                <ul id="nav-list" class="nav-menu">
+                    <div id="nav-close" class="nav-close" onclick="navclose()">
+                        <i class="fa-regular fa-circle-xmark fa-xl"></i>
+                    </div>
+                    <li class="nav-item"><a href="index.html" class="nav-link"><i class="fas fa-home"></i><span>HOME</span></a></li>
+                    <li class="nav-item"><a href="index.html#welcome_container" class="nav-link"><i class="fas fa-info-circle"></i><span>ABOUT</span></a></li>
+                    <li class="nav-item"><a href="registration.html" class="nav-link"><i class="fas fa-user-plus"></i><span>ADMISSION</span></a></li>
+                    <li class="nav-item"><a href="fees.html" class="nav-link"><i class="fas fa-money-bill-wave"></i><span>FEES</span></a></li>
+                    <li class="nav-item"><a href="index.html#our_highlights" class="nav-link"><i class="fas fa-star"></i><span>HIGHLIGHTS</span></a></li>
+                    <li class="nav-item"><a href="index.html#gallery" class="nav-link"><i class="fas fa-images"></i><span>GALLERY</span></a></li>
+                    <li class="nav-item"><a href="faculty.html" class="nav-link active"><i class="fas fa-chalkboard-teacher"></i><span>FACULTY</span></a></li>
+                    <li class="nav-item"><a href="index.html#our_result" class="nav-link"><i class="fas fa-trophy"></i><span>RESULTS</span></a></li>
+                    <li class="nav-item"><a href="index.html#footer" class="nav-link"><i class="fas fa-phone"></i><span>CONTACT</span></a></li>
                 </ul>
             </div>
         </nav>
-        
     </header>
-    <h1>Meet Our Team</h1>
 
-    <section class="container">
-        <h2> Director, Principal & Faculty</h2>
-        <div class="team-section">
-           
-             <!-- Director -->
-             <div class="team-card">
-                <img src="./images/director.jpg" alt="Director">
-                <div class="info">
-                    <h3>Mr. Uma Shankar Yadav</h3>
-                    <span>Director</span>
-                    <p>With an inspiring career in administration, Mr. Uma Shankar Yadav leads the school towards new heights of success and innovation in education.</p>
-                </div>
-            </div>
-            <!-- Principal -->
-            <div class="team-card">
-                <img src="./images/principle.jpg" alt="Principal">
-                <div class="info">
-                    <h3>Mr. Sanjeev Sharma</h3>
-                    <span>Principal</span>
-                    <p>Mr. Sanjeev Sharma is a visionary leader with over 10+ years of experience in education, fostering a holistic development approach for students.</p>
-                </div>
+    <!-- Faculty Hero Section -->
+    <div class="faculty-hero">
+        <h1><i class="fas fa-chalkboard-teacher"></i> Meet Our Faculty</h1>
+        <p>Dedicated educators shaping the future of our students</p>
+    </div>
+
+    <main class="faculty-main">
+        <section class="faculty-container">
+            <div class="faculty-intro">
+                <h2>Our Experienced Team</h2>
+                <p>Our faculty members are passionate educators committed to providing quality education and nurturing the potential of every student. With years of experience and dedication, they create an inspiring learning environment.</p>
             </div>
 
-          
+            <div class="faculty-grid">
+                <!-- Director -->
+                <div class="faculty-card leadership">
+                    <div class="faculty-image">
+                        <img src="./images/director.jpg" alt="Director">
+                        <div class="faculty-overlay">
+                            <div class="faculty-social">
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                                <a href="#"><i class="fas fa-phone"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faculty-info">
+                        <h3>Mr. Uma Shankar Yadav</h3>
+                        <span class="position">Director</span>
+                        <p>With an inspiring career in administration, Mr. Uma Shankar Yadav leads the school towards new heights of success and innovation in education.</p>
+                        <div class="faculty-stats">
+                            <div class="stat">
+                                <i class="fas fa-award"></i>
+                                <span>20+ Years Experience</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-            <!-- Faculty 1 -->
-            <div class="team-card">
-                <img src="./images/math-teacher.jpg" alt="Faculty">
-                <div class="info">
-                    <h3>Mr. S P Yadav</h3>
-                    <span>Vice principal</span>
-                    <p>Under the visionary leadership of Mr. S. P. Yadav, our school continues to foster a nurturing environment where students are encouraged to excel, grow, and prepare for a bright future.</p>
+                <!-- Principal -->
+                <div class="faculty-card leadership">
+                    <div class="faculty-image">
+                        <img src="./images/principle.jpg" alt="Principal">
+                        <div class="faculty-overlay">
+                            <div class="faculty-social">
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                                <a href="#"><i class="fas fa-phone"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faculty-info">
+                        <h3>Mr. Sanjeev Sharma</h3>
+                        <span class="position">Principal</span>
+                        <p>Mr. Sanjeev Sharma is a visionary leader with over 10+ years of experience in education, fostering a holistic development approach for students.</p>
+                        <div class="faculty-stats">
+                            <div class="stat">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>Educational Leadership</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Faculty 2 -->
-            <div class="team-card">
-                <img src="images/jaswant.jpg" alt="Faculty">
-                <div class="info">
-                    <h3>Mr. Jaswant Saxena</h3>
-                    <span>Clerk , Physics Teacher</span>
-                    <p>Mr. Jaswant Saxena, the backbone of our school’s administration, brings efficiency and precision to every task, ensuring the seamless functioning of our institution with his expertise and dedication.</p>
+                <!-- Vice Principal -->
+                <div class="faculty-card leadership">
+                    <div class="faculty-image">
+                        <img src="./images/math-teacher.jpg" alt="Vice Principal">
+                        <div class="faculty-overlay">
+                            <div class="faculty-social">
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                                <a href="#"><i class="fas fa-phone"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faculty-info">
+                        <h3>Mr. S P Yadav</h3>
+                        <span class="position">Vice Principal</span>
+                        <p>Under the visionary leadership of Mr. S. P. Yadav, our school continues to foster a nurturing environment where students are encouraged to excel, grow, and prepare for a bright future.</p>
+                        <div class="faculty-stats">
+                            <div class="stat">
+                                <i class="fas fa-users"></i>
+                                <span>Student Development</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Faculty 3 -->
-            <div class="team-card">
-                <img src="images/saxena.jpg" alt="Faculty">
-                <div class="info">
-                    <h3>Mr. Sanjeev Saxena</h3>
-                    <span>History Teacher</span>
-                    <p>Mr. Sanjeev Saxena helps students understand the importance of history in shaping the present and the future with engaging lessons.</p>
+                <!-- Faculty Members -->
+                <div class="faculty-card">
+                    <div class="faculty-image">
+                        <img src="images/jaswant.jpg" alt="Faculty">
+                        <div class="faculty-overlay">
+                            <div class="faculty-social">
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                                <a href="#"><i class="fas fa-phone"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faculty-info">
+                        <h3>Mr. Jaswant Saxena</h3>
+                        <span class="position">Clerk, Physics Teacher</span>
+                        <p>Mr. Jaswant Saxena, the backbone of our school's administration, brings efficiency and precision to every task, ensuring the seamless functioning of our institution.</p>
+                        <div class="faculty-stats">
+                            <div class="stat">
+                                <i class="fas fa-atom"></i>
+                                <span>Physics</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
 
-            <div class="team-card">
-                <img src="images/dhaniram.jpg" alt="Faculty">
-                <div class="info">
-                    <h3>Mr. Dhaniram</h3>
-                    <span>Sanskrit Teacher</span>
-                    <p>Mr. Dhaniram helps students understand the importance of Sanskrit in shaping the present and the future with engaging lessons.</p>
+                <div class="faculty-card">
+                    <div class="faculty-image">
+                        <img src="images/saxena.jpg" alt="Faculty">
+                        <div class="faculty-overlay">
+                            <div class="faculty-social">
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                                <a href="#"><i class="fas fa-phone"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faculty-info">
+                        <h3>Mr. Sanjeev Saxena</h3>
+                        <span class="position">History Teacher</span>
+                        <p>Mr. Sanjeev Saxena helps students understand the importance of history in shaping the present and the future with engaging lessons.</p>
+                        <div class="faculty-stats">
+                            <div class="stat">
+                                <i class="fas fa-landmark"></i>
+                                <span>History</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="team-card">
-                <img src="images/vinay.jpg" alt="Faculty">
-                <div class="info">
-                    <h3>Mr. Vinay yadav</h3>
-                    <span>Physics Teacher</span>
-                    <p>Experience the wonders of the universe with our inspiring Physics faculty, who ignites curiosity and fosters a passion for discovery through captivating lessons and hands-on experiments.</p>
-                </div>
-            </div>
-            <div class="team-card">
-                <img src="images/sumit.jpg" alt="Faculty">
-                <div class="info">
-                    <h3>Mr. Sumit atrauliya</h3>
-                    <span>Chemistry Teacher</span>
-                    <p>Explore the wonders of science with our passionate Chemistry teacher, who brings the periodic table to life and ignites curiosity through thrilling experiments and engaging lessons!</p>
-                </div>
-            </div>
-            <div class="team-card">
-                <img src="images/pushpraj.jpg" alt="Faculty">
-                <div class="info">
-                    <h3>Mr. Pushpraj</h3>
-                    <span>Bio Teacher</span>
-                    <p>Mr. Pushpraj provides insights into the natural world, helping students explore the wonders of biology through hands-on experiments and interactive lessons.</p>
-                </div>
-            </div>
-            <div class="team-card">
-                <img src="images/vinit.jpg" alt="Faculty">
-                <div class="info">
-                    <h3>Mr. Vinit Kumar</h3>
-                    <span>Math Teacher</span>
-                    <p>Mr. Vinit Kumar, our dynamic Math teacher, makes learning engaging and inspires a deep passion for problem-solving and analytical thinking in every student.</p>
-                </div>
-            </div>
-           
-            <div class="team-card">
-                <img src="images/ashok.jpg" alt="Faculty">
-                <div class="info">
-                    <h3>Mr. Ashok Shakya</h3>
-                    <span>English Teacher</span>
-                    <p>Our inspiring English faculty ignites a love for language and literature, empowering students to master communication and unleash their creativity through dynamic, engaging lessons.</p>
-                </div>
-            </div>
-            <div class="team-card">
-                <img src="images/manoj.jpg" alt="Faculty">
-                <div class="info">
-                    <h3>Mr. Manoj Kumar</h3>
-                    <span>English Teacher</span>
-                    <p>Passionate and inspiring, our English faculty brings language to life, guiding students to excel in communication, literature, and creative expression with a fresh, engaging approach.</p>
-                </div>
-            </div>
 
+                <div class="faculty-card">
+                    <div class="faculty-image">
+                        <img src="images/dhaniram.jpg" alt="Faculty">
+                        <div class="faculty-overlay">
+                            <div class="faculty-social">
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                                <a href="#"><i class="fas fa-phone"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faculty-info">
+                        <h3>Mr. Dhaniram</h3>
+                        <span class="position">Sanskrit Teacher</span>
+                        <p>Mr. Dhaniram helps students understand the importance of Sanskrit in shaping cultural heritage and linguistic foundations.</p>
+                        <div class="faculty-stats">
+                            <div class="stat">
+                                <i class="fas fa-om"></i>
+                                <span>Sanskrit</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faculty-card">
+                    <div class="faculty-image">
+                        <img src="images/vinay.jpg" alt="Faculty">
+                        <div class="faculty-overlay">
+                            <div class="faculty-social">
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                                <a href="#"><i class="fas fa-phone"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faculty-info">
+                        <h3>Mr. Vinay Yadav</h3>
+                        <span class="position">Physics Teacher</span>
+                        <p>Experience the wonders of the universe with our inspiring Physics faculty, who ignites curiosity and fosters a passion for discovery through captivating lessons.</p>
+                        <div class="faculty-stats">
+                            <div class="stat">
+                                <i class="fas fa-atom"></i>
+                                <span>Physics</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faculty-card">
+                    <div class="faculty-image">
+                        <img src="images/sumit.jpg" alt="Faculty">
+                        <div class="faculty-overlay">
+                            <div class="faculty-social">
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                                <a href="#"><i class="fas fa-phone"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faculty-info">
+                        <h3>Mr. Sumit Atrauliya</h3>
+                        <span class="position">Chemistry Teacher</span>
+                        <p>Explore the wonders of science with our passionate Chemistry teacher, who brings the periodic table to life and ignites curiosity through thrilling experiments!</p>
+                        <div class="faculty-stats">
+                            <div class="stat">
+                                <i class="fas fa-flask"></i>
+                                <span>Chemistry</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faculty-card">
+                    <div class="faculty-image">
+                        <img src="images/pushpraj.jpg" alt="Faculty">
+                        <div class="faculty-overlay">
+                            <div class="faculty-social">
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                                <a href="#"><i class="fas fa-phone"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faculty-info">
+                        <h3>Mr. Pushpraj</h3>
+                        <span class="position">Biology Teacher</span>
+                        <p>Mr. Pushpraj provides insights into the natural world, helping students explore the wonders of biology through hands-on experiments and interactive lessons.</p>
+                        <div class="faculty-stats">
+                            <div class="stat">
+                                <i class="fas fa-dna"></i>
+                                <span>Biology</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faculty-card">
+                    <div class="faculty-image">
+                        <img src="images/vinit.jpg" alt="Faculty">
+                        <div class="faculty-overlay">
+                            <div class="faculty-social">
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                                <a href="#"><i class="fas fa-phone"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faculty-info">
+                        <h3>Mr. Vinit Kumar</h3>
+                        <span class="position">Mathematics Teacher</span>
+                        <p>Mr. Vinit Kumar, our dynamic Math teacher, makes learning engaging and inspires a deep passion for problem-solving and analytical thinking in every student.</p>
+                        <div class="faculty-stats">
+                            <div class="stat">
+                                <i class="fas fa-calculator"></i>
+                                <span>Mathematics</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faculty-card">
+                    <div class="faculty-image">
+                        <img src="images/ashok.jpg" alt="Faculty">
+                        <div class="faculty-overlay">
+                            <div class="faculty-social">
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                                <a href="#"><i class="fas fa-phone"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faculty-info">
+                        <h3>Mr. Ashok Shakya</h3>
+                        <span class="position">English Teacher</span>
+                        <p>Our inspiring English faculty ignites a love for language and literature, empowering students to master communication and unleash their creativity.</p>
+                        <div class="faculty-stats">
+                            <div class="stat">
+                                <i class="fas fa-book"></i>
+                                <span>English</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faculty-card">
+                    <div class="faculty-image">
+                        <img src="images/manoj.jpg" alt="Faculty">
+                        <div class="faculty-overlay">
+                            <div class="faculty-social">
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                                <a href="#"><i class="fas fa-phone"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faculty-info">
+                        <h3>Mr. Manoj Kumar</h3>
+                        <span class="position">English Teacher</span>
+                        <p>Passionate and inspiring, our English faculty brings language to life, guiding students to excel in communication, literature, and creative expression.</p>
+                        <div class="faculty-stats">
+                            <div class="stat">
+                                <i class="fas fa-book"></i>
+                                <span>English</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-section contact-info">
+                <h2>Contact Us</h2>
+                <p><i class="fas fa-envelope"></i> Email: <a href="mailto:drmlkishni1285@gmail.com">drmlkishni1285@gmail.com</a></p>
+                <p><i class="fas fa-phone"></i> Phone: <a href="tel:+919758737481">+919758737481</a></p>
+                <p><i class="fas fa-map-marker-alt"></i> Address: Dr Rammanohar Lohiya Inter College, kishni, mainpuri, 205303</p>
+            </div>
+            <div class="footer-section social-media">
+                <h2>Follow Us</h2>
+                <a href="https://www.facebook.com/drmlickishni"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/drmlickishni/"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
         </div>
-    </section>
+        <div class="copyright">
+            <p>&copy; 2011 Dr Rammanohar Lohiya Inter College Kishni. All rights reserved.</p>
+        </div>
+    </footer>
 
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
 </body>
 </html>

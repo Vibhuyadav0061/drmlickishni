@@ -3,90 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Team - School Website</title>
+    <title>Video Gallery - DR RAMMANOHAR LOHIYA INTER COLLEGE KISHNI</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
- 
     <link rel="stylesheet" href="style.css">
-    <style>
-        h1 {
-            background-color: #647777;
-            padding: 1.5rem;
-            text-align: center;
-            color: white;
-        }
-        .video_sec{
-            display: flex;
-            flex-direction: column;
-
-            
-            align-items: center;
-            justify-content: center;
-            gap: 2rem;
-        }
-
-        .video_container{
-            width: 80%;
-            display: flex;
-            gap: 3rem;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 1rem;
-            margin-top: 1rem;
-         }
-         @media only screen and (max-width:900px){
-         .video_container{
-            flex-direction: column;
-         }
-         .video_container iframe{
-            width: auto;
-         }
-        }
-    </style>
-   
 </head>
 <body>
-    
-
-    
     <header>
-        <nav > 
-            <div class="logo"><img src="drmllogo.png" alt=""></div>
+        <nav class="modern-nav"> 
+            <div class="logo">
+                <img src="drmllogo.png" alt="DRMLIC Logo">
+                <div class="logo-text">
+                    <span class="logo-main">DRMLIC</span>
+                    <span class="logo-sub">Excellence in Education</span>
+                </div>
+            </div>
             
-            <div class="navbar" >
-                <span class="nav-button" id="nav-open" onclick="navopen()"><i class="fa-solid fa-bars fa-xl" style="color: #ffffff;"></i></span>
-                <ul id="nav-list">
-                    <div id="nav-close" class="nav-close" onclick="navclose()"><i class="fa-regular fa-circle-xmark fa-xl" style="color: #ffffff;"></i></div>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="#welcome_container">ABOUT SCHOOL</a></li>
-                    <li><a href="registration.html">ADMISSION</a></li>
-                    <li><a href="fees.html">FEE STRUCTURE</a></li>
-                    <li><a href="index.html">BEYOND ACADEMICS</a></li>
-                    <li><a href="faculty.html">FACULTY</a></li>
-                    <li><a href="index.html">OUR RESULT</a></li>
-                    <li><a href="index.html">CONTACT US</a></li>
+            <div class="navbar">
+                <span class="nav-button" id="nav-open" onclick="navopen()">
+                    <i class="fa-solid fa-bars fa-xl"></i>
+                </span>
+                <ul id="nav-list" class="nav-menu">
+                    <div id="nav-close" class="nav-close" onclick="navclose()">
+                        <i class="fa-regular fa-circle-xmark fa-xl"></i>
+                    </div>
+                    <li class="nav-item"><a href="index.html" class="nav-link" data-tooltip="Home"><i class="fas fa-home"></i><span>HOME</span></a></li>
+                    <li class="nav-item"><a href="index.html#welcome_container" class="nav-link" data-tooltip="About"><i class="fas fa-info-circle"></i><span>ABOUT</span></a></li>
+                    <li class="nav-item"><a href="registration.html" class="nav-link" data-tooltip="Admission"><i class="fas fa-user-plus"></i><span>ADMISSION</span></a></li>
+                    <li class="nav-item"><a href="fees.html" class="nav-link" data-tooltip="Fees"><i class="fas fa-money-bill-wave"></i><span>FEES</span></a></li>
+                    <li class="nav-item"><a href="index.html#our_highlights" class="nav-link" data-tooltip="Highlights"><i class="fas fa-star"></i><span>HIGHLIGHTS</span></a></li>
+                    <li class="nav-item"><a href="index.html#gallery" class="nav-link" data-tooltip="Gallery"><i class="fas fa-images"></i><span>GALLERY</span></a></li>
+                    <li class="nav-item"><a href="faculty.html" class="nav-link" data-tooltip="Faculty"><i class="fas fa-chalkboard-teacher"></i><span>FACULTY</span></a></li>
+                    <li class="nav-item"><a href="index.html#our_result" class="nav-link" data-tooltip="Results"><i class="fas fa-trophy"></i><span>RESULTS</span></a></li>
+                    <li class="nav-item"><a href="index.html#footer" class="nav-link" data-tooltip="Contact"><i class="fas fa-phone"></i><span>CONTACT</span></a></li>
                 </ul>
             </div>
         </nav>
-        
     </header>
-    <h1>VIDEO GALLERY</h1>
-    <section class="video_sec">
-        <!-- <h3>
-            Campus -
-        </h3> -->
-        <div class="video_container">
-            <iframe width="400" height="235" src="https://www.youtube.com/embed/VnlbLGaCK58?si=1cou90CgG1Sh4Iyo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <iframe id="video" width="400" height="235" src="https://www.youtube.com/embed/_dGXoMJQ6Qk?si=4vATpAbi9zekOIN9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          
-        </div> 
-        <div class="video_container">
-            <iframe width="400" height="235" src="https://www.youtube.com/embed/FEPi4CgrDk4?si=Y0J3G3XEx1-5E42B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <iframe width="400" height="235" src="https://www.youtube.com/embed/zG2eQRzKxrc?si=JBzBc2ZFj2TfRJs8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-        </div>      
-    </section>
-    
+    <!-- Video Gallery Hero Section -->
+    <div class="video-hero">
+        <h1><i class="fas fa-play-circle"></i> Video Gallery</h1>
+        <p>Experience our school life through captivating videos</p>
+    </div>
 
+    <main class="video-main">
+        <section class="video-section">
+            <div class="video-container">
+                <h2>Campus Life & Activities</h2>
+                <div class="video-grid">
+                    <div class="video-item">
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/VnlbLGaCK58?si=1cou90CgG1Sh4Iyo" 
+                                    title="Campus Tour" 
+                                    frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                    allowfullscreen>
+                            </iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3>Campus Tour</h3>
+                            <p>Take a virtual tour of our beautiful campus and modern facilities</p>
+                        </div>
+                    </div>
+
+                    <div class="video-item">
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/_dGXoMJQ6Qk?si=4vATpAbi9zekOIN9" 
+                                    title="School Activities" 
+                                    frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                    allowfullscreen>
+                            </iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3>School Activities</h3>
+                            <p>Discover the diverse range of activities and programs we offer</p>
+                        </div>
+                    </div>
+
+                    <div class="video-item">
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/FEPi4CgrDk4?si=Y0J3G3XEx1-5E42B" 
+                                    title="Student Life" 
+                                    frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                    allowfullscreen>
+                            </iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3>Student Life</h3>
+                            <p>Experience the vibrant student life and community at our school</p>
+                        </div>
+                    </div>
+
+                    <div class="video-item">
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/zG2eQRzKxrc?si=JBzBc2ZFj2TfRJs8" 
+                                    title="Academic Excellence" 
+                                    frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                    allowfullscreen>
+                            </iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3>Academic Excellence</h3>
+                            <p>See how we foster academic excellence and student achievement</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="video-cta">
+            <div class="cta-content">
+                <h2>Want to Learn More?</h2>
+                <p>Visit our campus or contact us for more information about our programs</p>
+                <div class="cta-buttons">
+                    <a href="registration.html" class="cta-btn primary">
+                        <i class="fas fa-user-plus"></i>
+                        Apply Now
+                    </a>
+                    <a href="index.html#footer" class="cta-btn secondary">
+                        <i class="fas fa-phone"></i>
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-section contact-info">
+                <h2>Contact Us</h2>
+                <p><i class="fas fa-envelope"></i> Email: <a href="mailto:drmlkishni1285@gmail.com">drmlkishni1285@gmail.com</a></p>
+                <p><i class="fas fa-phone"></i> Phone: <a href="tel:+919758737481">+919758737481</a></p>
+                <p><i class="fas fa-map-marker-alt"></i> Address: Dr Rammanohar Lohiya Inter College, kishni, mainpuri, 205303</p>
+            </div>
+            <div class="footer-section social-media">
+                <h2>Follow Us</h2>
+                <a href="https://www.facebook.com/drmlickishni"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/drmlickishni/"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2011 Dr Rammanohar Lohiya Inter College Kishni. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
 </body>
 </html>

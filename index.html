@@ -24,6 +24,11 @@
 
     <link rel="stylesheet" href="style.css">
     
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
@@ -32,26 +37,36 @@
 </head>
 <body>
     <div class="preloader" id="preloader"></div>
-    <header >
-        <nav > 
-            <div class="logo"><img src="drmllogo.png" alt=""></div>
+    <header>
+        <nav class="modern-nav"> 
+            <div class="logo">
+                <img src="drmllogo.png" alt="DRMLIC Logo">
+                <div class="logo-text">
+                    <span class="logo-main">DRMLIC</span>
+                    <span class="logo-sub">Excellence in Education</span>
+                </div>
+            </div>
             
-            <div class="navbar" >
-                <span class="nav-button" id="nav-open" onclick="navopen()"><i class="fa-solid fa-bars fa-xl" style="color: #ffffff;"></i></span>
-                <ul id="nav-list">
-                    <div id="nav-close" class="nav-close" onclick="navclose()"><i class="fa-regular fa-circle-xmark fa-xl" style="color: #ffffff;"></i></div>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="#welcome_container">ABOUT SCHOOL</a></li>
-                    <li><a href="registration.html">ADMISSION</a></li>
-                    <li><a href="fees.html">FEE STRUCTURE</a></li>
-                    <li><a href="#our_highlights">OUR HIGHLIGHTS</a></li>
-                    <li><a href="faculty.html">FACULTY</a></li>
-                    <li><a href="#our_result">OUR RESULT</a></li>
-                    <li><a href="#footer">CONTACT US</a></li>
+            <div class="navbar">
+                <span class="nav-button" id="nav-open" onclick="navopen()">
+                    <i class="fa-solid fa-bars fa-xl"></i>
+                </span>
+                <ul id="nav-list" class="nav-menu">
+                    <div id="nav-close" class="nav-close" onclick="navclose()">
+                        <i class="fa-regular fa-circle-xmark fa-xl"></i>
+                    </div>
+                    <li class="nav-item"><a href="index.html" class="nav-link" data-tooltip="Home"><i class="fas fa-home"></i><span>HOME</span></a></li>
+                    <li class="nav-item"><a href="#welcome_container" class="nav-link" data-tooltip="About"><i class="fas fa-info-circle"></i><span>ABOUT</span></a></li>
+                    <li class="nav-item"><a href="registration.html" class="nav-link" data-tooltip="Admission"><i class="fas fa-user-plus"></i><span>ADMISSION</span></a></li>
+                    <li class="nav-item"><a href="fees.html" class="nav-link" data-tooltip="Fees"><i class="fas fa-money-bill-wave"></i><span>FEES</span></a></li>
+                    <li class="nav-item"><a href="#our_highlights" class="nav-link" data-tooltip="Highlights"><i class="fas fa-star"></i><span>HIGHLIGHTS</span></a></li>
+                    <li class="nav-item"><a href="#gallery" class="nav-link" data-tooltip="Gallery"><i class="fas fa-images"></i><span>GALLERY</span></a></li>
+                    <li class="nav-item"><a href="faculty.html" class="nav-link" data-tooltip="Faculty"><i class="fas fa-chalkboard-teacher"></i><span>FACULTY</span></a></li>
+                    <li class="nav-item"><a href="#our_result" class="nav-link" data-tooltip="Results"><i class="fas fa-trophy"></i><span>RESULTS</span></a></li>
+                    <li class="nav-item"><a href="#footer" class="nav-link" data-tooltip="Contact"><i class="fas fa-phone"></i><span>CONTACT</span></a></li>
                 </ul>
             </div>
         </nav>
-       
     </header>
     <div class="social_media">
         <a href="tel:+91 9412504595"><img src="images/phone.webp" alt=""></a>
@@ -76,6 +91,141 @@
         <p>
             Founded in the heart of Kishni, Dr. Rammanohar Lohiya Inter College has been a beacon of academic excellence and holistic development since its inception. Our mission is to nurture young minds, fostering a spirit of inquiry, innovation, and integrity. Join us on a journey where education transcends traditional boundaries, empowering students to achieve their fullest potential in a supportive and dynamic environment. We are committed to cultivating the leaders of tomorrow with a strong foundation of values and knowledge. Welcome to a community where every student's success story begins.
         </p>
+      </div>
+
+      <!-- Gallery Section -->
+      <div class="gallery-section" id="gallery">
+        <h2>PHOTO GALLERY</h2>
+        <p class="gallery-subtitle">Capturing Moments, Creating Memories</p>
+        
+        <div class="gallery-filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="events">Events</button>
+          <button class="filter-btn" data-filter="academics">Academics</button>
+          <button class="filter-btn" data-filter="sports">Sports</button>
+          <button class="filter-btn" data-filter="facilities">Facilities</button>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item" data-category="events">
+            <img src="images/danceevent.png" alt="Cultural Event" loading="lazy">
+            <div class="gallery-overlay">
+              <h3>Cultural Events</h3>
+              <p>Annual cultural celebrations</p>
+            </div>
+          </div>
+          
+          <div class="gallery-item" data-category="academics">
+            <img src="images/smartclass.jpg" alt="Smart Classroom" loading="lazy">
+            <div class="gallery-overlay">
+              <h3>Smart Classrooms</h3>
+              <p>Modern learning environment</p>
+            </div>
+          </div>
+          
+          <div class="gallery-item" data-category="sports">
+            <img src="images/game.png" alt="Sports Activities" loading="lazy">
+            <div class="gallery-overlay">
+              <h3>Sports Activities</h3>
+              <p>Physical fitness and teamwork</p>
+            </div>
+          </div>
+          
+          <div class="gallery-item" data-category="facilities">
+            <img src="images/lab.jpg" alt="Science Laboratory" loading="lazy">
+            <div class="gallery-overlay">
+              <h3>Science Laboratory</h3>
+              <p>Hands-on learning experience</p>
+            </div>
+          </div>
+          
+          <div class="gallery-item" data-category="events">
+            <img src="images/scout.png" alt="Scouts & Guides" loading="lazy">
+            <div class="gallery-overlay">
+              <h3>Scouts & Guides</h3>
+              <p>Character building activities</p>
+            </div>
+          </div>
+          
+          <div class="gallery-item" data-category="events">
+            <img src="images/trip.png" alt="Educational Trip" loading="lazy">
+            <div class="gallery-overlay">
+              <h3>Educational Trips</h3>
+              <p>Learning beyond classroom</p>
+            </div>
+          </div>
+          
+          <div class="gallery-item" data-category="facilities">
+            <img src="images/building1.jpg" alt="School Building" loading="lazy">
+            <div class="gallery-overlay">
+              <h3>School Infrastructure</h3>
+              <p>Modern educational facilities</p>
+            </div>
+          </div>
+          
+          <div class="gallery-item" data-category="facilities">
+            <img src="images/building2.png" alt="Campus View" loading="lazy">
+            <div class="gallery-overlay">
+              <h3>Campus Overview</h3>
+              <p>Beautiful learning environment</p>
+            </div>
+          </div>
+          
+          <div class="gallery-item" data-category="events">
+            <img src="images/event1.png" alt="School Event" loading="lazy">
+            <div class="gallery-overlay">
+              <h3>Special Events</h3>
+              <p>Memorable school occasions</p>
+            </div>
+          </div>
+          
+          <div class="gallery-item" data-category="academics">
+            <img src="images/2024boys.png" alt="Academic Achievement" loading="lazy">
+            <div class="gallery-overlay">
+              <h3>Academic Excellence</h3>
+              <p>Celebrating student success</p>
+            </div>
+          </div>
+          
+          <div class="gallery-item" data-category="events">
+            <img src="images/welcomeback.png" alt="Welcome Event" loading="lazy">
+            <div class="gallery-overlay">
+              <h3>Welcome Ceremony</h3>
+              <p>New academic year celebration</p>
+            </div>
+          </div>
+          
+          <div class="gallery-item" data-category="facilities">
+            <img src="images/oldbuilding.png" alt="Heritage Building" loading="lazy">
+            <div class="gallery-overlay">
+              <h3>Heritage Building</h3>
+              <p>Rich history and tradition</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-cta">
+          <a href="gallery.html" class="gallery-btn">
+            <i class="fas fa-images"></i>
+            View Complete Gallery
+          </a>
+        </div>
+      </div>
+
+      <!-- Lightbox Modal -->
+      <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+          <span class="lightbox-close">&times;</span>
+          <img class="lightbox-image" id="lightbox-image" src="" alt="">
+          <div class="lightbox-info">
+            <h3 class="lightbox-title"></h3>
+            <p class="lightbox-description"></p>
+          </div>
+          <div class="lightbox-nav">
+            <button class="lightbox-prev">&#8249;</button>
+            <button class="lightbox-next">&#8250;</button>
+          </div>
+        </div>
       </div>
 
       <div class="result" id="our_result">
@@ -164,15 +314,15 @@
 
         <div class="heighlights_images">
            <div class="heighlights_images_1">
-              <div class="smart_class">Smart Class</div>
-              <div class="field_trips">Field Trip</div>
+              <div class="smart_class activity-card">Smart Class</div>
+              <div class="field_trips activity-card">Field Trip</div>
               <!-- <div class="innovation"></div> -->
-              <div class="sports">Sport</div>
+              <div class="sports activity-card">Sport</div>
            </div>
             <div class="heighlights_images_2">
-                <div class="cultural_event">Cultural Events</div>
-                <div class="scout">Scouts & Guides</div>
-                <div class="lab">Labs</div>
+                <div class="cultural_event activity-card">Cultural Events</div>
+                <div class="scout activity-card">Scouts & Guides</div>
+                <div class="lab activity-card">Labs</div>
             </div>
         </div>
       </div>
@@ -223,6 +373,11 @@
             <p>&copy; 2011 Dr Rammanohar Lohiya Inter College Kishni. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
 
     
      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>

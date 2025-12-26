@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - DR RAMMANOHAR LOHIYA INTER COLLEGE KISHNI</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="modern-nav"> 
+            <div class="logo">
+                <img src="drmllogo.png" alt="DRMLIC Logo">
+                <div class="logo-text">
+                    <span class="logo-main">DRMLIC</span>
+                    <span class="logo-sub">Excellence in Education</span>
+                </div>
+            </div>
+            
+            <div class="navbar">
+                <span class="nav-button" id="nav-open" onclick="navopen()">
+                    <i class="fa-solid fa-bars fa-xl"></i>
+                </span>
+                <ul id="nav-list" class="nav-menu">
+                    <div id="nav-close" class="nav-close" onclick="navclose()">
+                        <i class="fa-regular fa-circle-xmark fa-xl"></i>
+                    </div>
+                    <li class="nav-item"><a href="index.html" class="nav-link"><i class="fas fa-home"></i><span>HOME</span></a></li>
+                    <li class="nav-item"><a href="index.html#welcome_container" class="nav-link"><i class="fas fa-info-circle"></i><span>ABOUT</span></a></li>
+                    <li class="nav-item"><a href="registration.html" class="nav-link"><i class="fas fa-user-plus"></i><span>ADMISSION</span></a></li>
+                    <li class="nav-item"><a href="fees.html" class="nav-link"><i class="fas fa-money-bill-wave"></i><span>FEES</span></a></li>
+                    <li class="nav-item"><a href="index.html#our_highlights" class="nav-link"><i class="fas fa-star"></i><span>HIGHLIGHTS</span></a></li>
+                    <li class="nav-item"><a href="gallery.html" class="nav-link active"><i class="fas fa-images"></i><span>GALLERY</span></a></li>
+                    <li class="nav-item"><a href="faculty.html" class="nav-link"><i class="fas fa-chalkboard-teacher"></i><span>FACULTY</span></a></li>
+                    <li class="nav-item"><a href="index.html#our_result" class="nav-link"><i class="fas fa-trophy"></i><span>RESULTS</span></a></li>
+                    <li class="nav-item"><a href="index.html#footer" class="nav-link"><i class="fas fa-phone"></i><span>CONTACT</span></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="gallery-hero">
+            <h1>Photo Gallery</h1>
+            <p>Explore the vibrant life at Dr. Rammanohar Lohiya Inter College</p>
+        </div>
+
+        <div class="gallery-section">
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">All Photos</button>
+                <button class="filter-btn" data-filter="events">Events</button>
+                <button class="filter-btn" data-filter="academics">Academics</button>
+                <button class="filter-btn" data-filter="sports">Sports</button>
+                <button class="filter-btn" data-filter="facilities">Facilities</button>
+                <button class="filter-btn" data-filter="achievements">Achievements</button>
+            </div>
+
+            <div class="gallery-grid">
+                <!-- Existing images from main page -->
+                <div class="gallery-item" data-category="events">
+                    <img src="images/danceevent.png" alt="Cultural Event" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Cultural Events</h3>
+                        <p>Annual cultural celebrations</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="academics">
+                    <img src="images/smartclass.jpg" alt="Smart Classroom" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Smart Classrooms</h3>
+                        <p>Modern learning environment</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="sports">
+                    <img src="images/game.png" alt="Sports Activities" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Sports Activities</h3>
+                        <p>Physical fitness and teamwork</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="facilities">
+                    <img src="images/lab.jpg" alt="Science Laboratory" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Science Laboratory</h3>
+                        <p>Hands-on learning experience</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="events">
+                    <img src="images/scout.png" alt="Scouts & Guides" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Scouts & Guides</h3>
+                        <p>Character building activities</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="events">
+                    <img src="images/trip.png" alt="Educational Trip" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Educational Trips</h3>
+                        <p>Learning beyond classroom</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="facilities">
+                    <img src="images/building1.jpg" alt="School Building" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>School Infrastructure</h3>
+                        <p>Modern educational facilities</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="facilities">
+                    <img src="images/building2.png" alt="Campus View" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Campus Overview</h3>
+                        <p>Beautiful learning environment</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="events">
+                    <img src="images/event1.png" alt="School Event" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Special Events</h3>
+                        <p>Memorable school occasions</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="achievements">
+                    <img src="images/2024boys.png" alt="Academic Achievement" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Academic Excellence</h3>
+                        <p>Celebrating student success</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="events">
+                    <img src="images/welcomeback.png" alt="Welcome Event" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Welcome Ceremony</h3>
+                        <p>New academic year celebration</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="facilities">
+                    <img src="images/oldbuilding.png" alt="Heritage Building" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Heritage Building</h3>
+                        <p>Rich history and tradition</p>
+                    </div>
+                </div>
+
+                <!-- Additional faculty images -->
+                <div class="gallery-item" data-category="academics">
+                    <img src="images/director.jpg" alt="School Director" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>School Leadership</h3>
+                        <p>Experienced educational leadership</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="academics">
+                    <img src="images/principle.jpg" alt="School Principal" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Principal</h3>
+                        <p>Academic excellence leadership</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="academics">
+                    <img src="images/math-teacher.jpg" alt="Mathematics Teacher" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Mathematics Department</h3>
+                        <p>Expert mathematics instruction</p>
+                    </div>
+                </div>
+
+                <!-- Student achievement images -->
+                <div class="gallery-item" data-category="achievements">
+                    <img src="images/raj.jpg" alt="Top Student" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Academic Achiever</h3>
+                        <p>Outstanding academic performance</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="achievements">
+                    <img src="images/atharv.jpg" alt="High Achiever" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Excellence in Studies</h3>
+                        <p>Dedicated student success</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="achievements">
+                    <img src="images/surya.jpg" alt="Academic Success" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Academic Excellence</h3>
+                        <p>Consistent high performance</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lightbox Modal -->
+        <div class="lightbox" id="lightbox">
+            <div class="lightbox-content">
+                <span class="lightbox-close">&times;</span>
+                <img class="lightbox-image" id="lightbox-image" src="" alt="">
+                <div class="lightbox-info">
+                    <h3 class="lightbox-title"></h3>
+                    <p class="lightbox-description"></p>
+                </div>
+                <div class="lightbox-nav">
+                    <button class="lightbox-prev">&#8249;</button>
+                    <button class="lightbox-next">&#8250;</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-section contact-info">
+                <h2>Contact Us</h2>
+                <p><i class="fas fa-envelope"></i> Email: <a href="mailto:drmlkishni1285@gmail.com">drmlkishni1285@gmail.com</a></p>
+                <p><i class="fas fa-phone"></i> Phone: <a href="tel:+919758737481">+919758737481</a></p>
+                <p><i class="fas fa-map-marker-alt"></i> Address: Dr Rammanohar Lohiya Inter College, kishni, mainpuri, 205303</p>
+            </div>
+            <div class="footer-section social-media">
+                <h2>Follow Us</h2>
+                <a href="https://www.facebook.com/drmlickishni"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/drmlickishni/"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2011 Dr Rammanohar Lohiya Inter College Kishni. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
